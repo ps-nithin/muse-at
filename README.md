@@ -14,3 +14,6 @@
 <p>an open message is a message in which you cannot know the identity of the sender while a closed message is a message in which you can know the identity of the sender.
 <h2>who can send you a message?</h2>
 <p>anyone who knows your muse id can send you a message.
+
+<p>an instance of this project is running at www.muse-at.com
+<p>send open messages at www.muse-at.com/open.php
