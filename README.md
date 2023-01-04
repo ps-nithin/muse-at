@@ -3,10 +3,7 @@
 <p>1. create a muse id.
 <p>2. share your muse id with the world.
 <p>3. receive messages from the world.
-
-  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-<h1> FAQ's</h1>
 <h2>what is this all about?</h2>
 <p>a new and open way of communication.
 <h2>what is a muse id?</h2>
