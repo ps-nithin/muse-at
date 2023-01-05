@@ -15,4 +15,4 @@
 <h2>who can send you a message?</h2>
 <p>anyone who knows your muse id can send you a message.
 <p>an instance of this project is running at www.muse-at.com
-<p>send open messages at www.muse-at.com/open.php
+<p>send open messages at www.muse-at.com/open.php?id=ps_nithin
