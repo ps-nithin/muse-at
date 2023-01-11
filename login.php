@@ -9,6 +9,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']===true){
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <head>
+    <title>muse@ - login</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

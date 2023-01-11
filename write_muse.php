@@ -23,11 +23,12 @@ $messages_encrypted = openssl_encrypt($messages, $ciphering, $encryption_key, $o
 
 
 if(strlen($messages)==0){
-  header('location:muse.php?r=0&id='.$receiver);
-  exit;
+  #header('location:muse.php?r=0&id='.$receiver);
+  #exit;
+  echo "2";
 }
 $time=date("h:ia").", ".date("d M Y");
-
+$time=$_POST['time'];
 $result=$conn->query("select id from $username where sender='$receiver' or receiver='$receiver' order by id asc;");
 if($result->num_rows==$max_msg){
 	$row=$result->fetch_assoc();
@@ -45,10 +46,12 @@ $sql_inbox="insert into $receiver (inbox,sender,timeinbox,viewed) values ('$mess
 $sql_outbox="insert into $username (outbox,receiver,timeoutbox,viewed) values ('$messages_encrypted','$receiver','$time',0);";
 
 if($conn->query($sql_inbox)===true and $conn->query($sql_outbox)==true){
-  header('location:muse.php?r=1&id='.$receiver);
-  exit;
+  #header('location:muse.php?r=1&id='.$receiver);
+  #exit;
+  echo "1";
 }else{
-  header('location:muse.php?r=0&id='.$receiver);
-  exit;
+  #header('location:muse.php?r=0&id='.$receiver);
+  #exit;
+  echo "0";
 }
 ?>

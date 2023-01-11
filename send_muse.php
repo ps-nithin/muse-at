@@ -37,6 +37,7 @@ if($result->num_rows==$max_msg){
 }
 
 $time=date("h:ia").", ".date("d M Y");
+$time=$_POST['time'];
 $conn->query("insert into $receiver (inbox,sender,timeinbox,viewed) values ('$messages_encrypted','$username','$time',0);");
 $conn->query("insert into $username (outbox,receiver,timeoutbox,viewed) values ('$messages_encrypted','$receiver','$time',1);");
 header('location:view_inbox.php?id='.$receiver);

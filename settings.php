@@ -8,8 +8,11 @@ require("mysql_conn.php");
 $username=$_SESSION['username'];
 ?>
 <html>
+<head>
+    <title>muse@ - settings</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
 <body>
 <div class="header_wrap">
 <div class="header_div">

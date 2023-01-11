@@ -16,18 +16,22 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1 or $r
 ?>
 <html>
 <head>
+    <title>muse@ - sending open message</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 <meta name='viewport' content='width=device-width,initial-scale=1'/>
+</head>
 <body>
 <div class="header_wrap">
 <div class="header_div">
 <div class="menu_item first_menu_item"><a href='open.php'>&lt; back</a></div>
 </div></div>
 <div class="content_div"><div class="welcome"><h2>sending an open message<br>to @<?php echo $receiver?></h2></div>
-<form action='write_muse_a.php' method='post'>
-<textarea class="input_text" name='muse_content' maxlength='1024' placeholder='enter your message...'></textarea>
-<input type='hidden' name='receiver' value='<?php echo $receiver?>'></input><br>
-<input class="input_button" type='submit' name='submit'>
+<form>
+<textarea class="input_text" name='muse_content' id='muse_content_open_id' maxlength='1024' placeholder='enter your message...'></textarea>
+<input type='hidden' id='open_receiver_id' name='receiver' value='<?php echo $receiver;?>'></input><br>
+<input class="input_button" id='open_submit_id' value='submit' type='button' name='submit'>
 </form>
 </div>
 

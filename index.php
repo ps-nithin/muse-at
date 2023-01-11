@@ -9,6 +9,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/> 
 <head>
+    <title>muse@ - home</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -31,9 +32,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 
 
 <div class="footer_div">
-    <!--
     <p>this is an opensource project. find code at <a href="https://github.com/ps-nithin/muse-at/" target="_blank">github</a>.</p>
-    -->
 </div>
 </body>
 </html>
