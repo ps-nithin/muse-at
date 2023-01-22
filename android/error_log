@@ -1,0 +1,286 @@
+[02-Jan-2023 16:01:39 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'musemachine'@'localhost' to database 'musemachine_db' in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:04:32 UTC] PHP Notice:  Undefined variable: servername in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:04:32 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'musemachine'@'localhost' to database 'musemachine_db' in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:04:37 UTC] PHP Notice:  Undefined variable: servername in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:04:37 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'musemachine'@'localhost' to database 'musemachine_db' in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:05:25 UTC] PHP Warning:  mysqli::__construct(): (HY000/2005): Unknown MySQL server host 'oltwasq7fzh7' (0) in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:05:49 UTC] PHP Warning:  mysqli::__construct(): (42000/1044): Access denied for user 'musemachine'@'localhost' to database 'musemachine_db' in /home/oltwasq7fzh7/public_html/mysql_conn.php on line 6
+[02-Jan-2023 16:37:58 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server in /home/oltwasq7fzh7/public_html/PHPMailer.php:2233
+Stack trace:
+#0 /home/oltwasq7fzh7/public_html/PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/oltwasq7fzh7/public_html/PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 2 Ja...', 'This is a plain...')
+#2 /home/oltwasq7fzh7/public_html/PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/oltwasq7fzh7/public_html/send.php(22): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/oltwasq7fzh7/public_html/PHPMailer.php on line 2233
+[02-Jan-2023 16:38:10 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server in /home/oltwasq7fzh7/public_html/PHPMailer.php:2233
+Stack trace:
+#0 /home/oltwasq7fzh7/public_html/PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/oltwasq7fzh7/public_html/PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 2 Ja...', 'This is a plain...')
+#2 /home/oltwasq7fzh7/public_html/PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/oltwasq7fzh7/public_html/send.php(22): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/oltwasq7fzh7/public_html/PHPMailer.php on line 2233
+[02-Jan-2023 16:39:18 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server in /home/oltwasq7fzh7/public_html/PHPMailer.php:2233
+Stack trace:
+#0 /home/oltwasq7fzh7/public_html/PHPMailer.php(2019): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/oltwasq7fzh7/public_html/PHPMailer.php(1678): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 2 Ja...', 'This is a plain...')
+#2 /home/oltwasq7fzh7/public_html/PHPMailer.php(1516): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/oltwasq7fzh7/public_html/send.php(22): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/oltwasq7fzh7/public_html/PHPMailer.php on line 2233
+[03-Jan-2023 01:55:17 UTC] PHP Warning:  Creating default object from empty value in /home/oltwasq7fzh7/public_html/send.php on line 24
+[03-Jan-2023 01:55:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::setFrom() in /home/oltwasq7fzh7/public_html/send.php:26
+Stack trace:
+#0 /home/oltwasq7fzh7/public_html/signup_otp.php(48): sendOTP(50211)
+#1 {main}
+  thrown in /home/oltwasq7fzh7/public_html/send.php on line 26
+[03-Jan-2023 01:56:06 UTC] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home/oltwasq7fzh7/public_html/signup_otp.php on line 45
+[03-Jan-2023 01:58:20 UTC] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home/oltwasq7fzh7/public_html/signup_otp.php on line 45
+[03-Jan-2023 01:59:50 UTC] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home/oltwasq7fzh7/public_html/signup_otp.php on line 45
+[03-Jan-2023 14:23:38 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/oltwasq7fzh7/public_html/reset.php on line 10
+[03-Jan-2023 14:52:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:52:35 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 14:57:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:57:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 14:57:18 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:57:18 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 14:57:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:57:22 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 14:57:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:57:27 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 14:58:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:58:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:58:30 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:58:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:58:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:58:33 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:37 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:39 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:40 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:40 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:40 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:41 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:41 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:41 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:42 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 14:59:43 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 14:59:43 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 14:59:43 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:01:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:16 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:16 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:01:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:01:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:22 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:22 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:01:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:01:22 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:03:05 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 9
+[03-Jan-2023 15:04:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:01 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:01 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:04:01 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:04:04 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:04 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:04 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:04:04 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:04:04 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:04:06 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 9
+[03-Jan-2023 15:05:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:22 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:22 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:05:22 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:05:24 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 9
+[03-Jan-2023 15:05:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:38 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:38 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:05:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:05:38 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:05:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 9
+[03-Jan-2023 15:06:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:06:13 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:06:13 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:06:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:06:13 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:06:14 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 9
+[03-Jan-2023 15:07:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:08 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:08 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:07:08 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:07:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:10 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:10 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:07:10 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:07:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:11 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:11 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:07:11 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:07:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:12 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:12 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:07:12 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:07:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:37 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:37 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:07:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 22
+[03-Jan-2023 15:07:37 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:09:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:09:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 26
+[03-Jan-2023 15:09:12 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:09:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:09:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 26
+[03-Jan-2023 15:09:13 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:09:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:09:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 26
+[03-Jan-2023 15:09:19 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:09:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:09:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 26
+[03-Jan-2023 15:09:20 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 34
+[03-Jan-2023 15:10:26 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:10:26 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:10:26 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:10:28 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:10:28 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:10:28 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:19:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:19:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:19:14 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:19:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:19:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:19:49 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:19:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:19:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:19:50 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:08 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:09 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:09 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:09 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:10 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:11 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:12 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:13 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:13 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:16 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:34 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:20:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:20:37 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:20:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:21:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:21:27 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:21:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:21:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:21:30 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:21:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/toggle_deactivate.php on line 11
+[03-Jan-2023 15:21:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:21:31 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 15:21:32 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/welcome.php on line 21
+[03-Jan-2023 15:21:32 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/welcome.php on line 33
+[03-Jan-2023 16:08:27 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/oltwasq7fzh7/public_html/signup_otp.php on line 30
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined index: nil in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 14
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined variable: decryption_key in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined variable: decryption_key in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined variable: decryption_key in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined variable: decryption_key in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[10-Jan-2023 13:15:17 UTC] PHP Notice:  Undefined variable: decryption_key in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[10-Jan-2023 13:17:41 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 16
+[10-Jan-2023 13:19:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 16
+[10-Jan-2023 13:20:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 16
+[10-Jan-2023 13:20:50 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 16
+[10-Jan-2023 13:22:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 16
+[10-Jan-2023 14:06:20 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 12
+[10-Jan-2023 14:07:47 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 12
+[10-Jan-2023 15:47:59 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:47:59 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 15:48:10 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:48:10 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 15:49:07 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:51:22 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:53:21 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:53:21 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 15:53:21 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 38
+[10-Jan-2023 15:55:15 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:55:15 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 15:55:15 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 38
+[10-Jan-2023 15:57:57 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 15:58:33 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:00:51 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:01:29 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:02:17 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:07:00 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:07:59 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:11:35 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:34:52 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:36:23 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:41:02 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:41:41 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 16:48:05 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 17:00:07 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 17:00:57 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[10-Jan-2023 17:09:53 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:09:53 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 17:19:51 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:19:51 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 17:20:21 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:20:21 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 17:22:41 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:22:41 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 17:24:13 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:24:13 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 17:37:36 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 17:37:36 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:05:56 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:05:56 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:05:56 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:05:56 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[10-Jan-2023 18:05:59 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:05:59 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:05:59 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:05:59 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[10-Jan-2023 18:06:03 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:06:03 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:06:03 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:06:03 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:06:04 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[10-Jan-2023 18:06:05 UTC] PHP Notice:  Undefined index: muse_content in /home/oltwasq7fzh7/public_html/write_muse.php on line 10
+[10-Jan-2023 18:06:05 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/write_muse.php on line 12
+[10-Jan-2023 18:06:05 UTC] PHP Notice:  Undefined index: time in /home/oltwasq7fzh7/public_html/write_muse.php on line 31
+[10-Jan-2023 18:06:05 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/oltwasq7fzh7/public_html/write_muse.php on line 39
+[11-Jan-2023 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/oltwasq7fzh7/public_html/get_user_a.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/oltwasq7fzh7/public_html/get_user_a.php on line 11
+[15-Jan-2023 03:53:20 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[15-Jan-2023 04:46:16 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/android/get_user.php on line 9
+[21-Jan-2023 03:37:22 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/android/get_user_a.php on line 3

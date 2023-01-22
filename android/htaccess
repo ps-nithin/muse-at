@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?muse-at\.com
+RewriteRule ^(.*)$ https://www.muse-at.com/$1 [R,L]
+Options +FollowSymLinks
+RewriteRule ^@([a-zA-Z_]*) /open.php?id=$1 [QSA,L]
