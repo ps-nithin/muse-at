@@ -1,3 +1,5 @@
+
+
 .header_wrap{
 position:fixed;
 height:60px;
@@ -58,6 +60,9 @@ border:1px solid lightgrey;
 }
 .first_menu_item{
 border-left:1px solid lightgrey;
+margin-left:10px;
+}
+.first_item{
 margin-left:10px;
 }
 .last_menu_item{
@@ -144,6 +149,11 @@ outline:none;
 }
 textarea:focus{
 outline:none;
+}
+#playstore{
+width:200px;
+height:auto;
+background-size:contain;
 }
 #get_content{
 border:1px solid lightgrey;

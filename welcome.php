@@ -17,7 +17,7 @@ $username=$_SESSION['username'];
 <div class="header_wrap">
 <div class="header_div">
 <div class='menu_item act_menu first_menu_item'><a href='welcome.php'>home</a>
-</div><div class="menu_item"><a href="open.php">send closed</a></div>
+</div><div class="menu_item"><a href="muse.php">send closed</a></div>
 <div class="menu_item"><a href="settings.php">+</a></div>
 <div class='menu_item last_menu_item float_right'><a href='logout.php'>logout @<?php echo $username;?></a>
 </div></div></div>

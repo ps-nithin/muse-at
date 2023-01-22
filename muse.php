@@ -24,7 +24,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 </div></div>
 <div class="content_div">
 <div class="welcome"><h2>send a closed message.</h2></div>
-<form class="content" action="get_user.php" method="post">
+<form class="content first_item" action="get_user.php" method="post">
 
 @&nbsp;<input class="input_text" type="text" name="receiver" placeholder="enter muse id" value="<?php 
 if(isset($_GET['id'])){

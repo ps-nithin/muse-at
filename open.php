@@ -1,4 +1,5 @@
 <?php
+/*
 session_start();
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
   if(isset($_GET['id'])){
@@ -9,6 +10,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
     exit;
   }
 }
+*/
 ?>
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -26,7 +28,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 </div></div></div>
 <div class="content_div">
 <div class="welcome"><h1>send an open message.</h1></div>
-<form class="content" action="get_user_a.php" method="post">
+<form class="content first_item" action="get_user_a.php" method="post">
 @&nbsp;<input class="input_text" type="text" name="receiver" placeholder="enter muse id" value="<?php 
 if(isset($_GET['id'])){
   echo $_GET['id'];

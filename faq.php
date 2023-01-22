@@ -23,7 +23,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 ?>
 <div class="menu_item act_menu"><a href="faq.php">faq</a></div>
 </div></div>
-<div class="content_div"><div class="content">
+<div class="content_div"><div class="content first_item">
 <h2>what is this all about?</h2>
 <p>a new and open way of communication.
 <h2>what is a muse id?</h2>
