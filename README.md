@@ -17,4 +17,4 @@
 <p>an instance of this project is running at www.muse-at.com
 <p>send open messages at www.muse-at.com/open.php
 <p>or
-<p>send open message to a muse id at www.muse-at.com/@&lt;enter_muse_id&gt/;
+<p>send open message to a muse id at www.muse-at.com/@enter_muse_id;
