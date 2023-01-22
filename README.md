@@ -16,3 +16,5 @@
 <p>anyone who knows your muse id can send you a message.
 <p>an instance of this project is running at www.muse-at.com
 <p>send open messages at www.muse-at.com/open.php
+<p>or
+<p>send open message to a muse id at www.muse-at.com/@muse_id
