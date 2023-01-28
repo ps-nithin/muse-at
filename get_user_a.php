@@ -1,9 +1,11 @@
 <?php
 session_start();
+/*
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
   header('location:get_user.php');
   exit;
 }
+*/
 require('mysql_conn.php');
 $receiver=strtolower(trim($_POST['receiver']));
 $receiver=filter_var($receiver,FILTER_SANITIZE_STRING);
@@ -25,7 +27,7 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1 or $r
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href='open.php'>&lt; back</a></div>
+<div class="menu_item first_menu_item"><a href='open_logged_in.php'>&lt; back</a></div>
 </div></div>
 <div class="content_div"><div class="welcome"><h2>sending an open message<br>to @<?php echo $receiver?></h2></div>
 <form>

@@ -1,0 +1,16 @@
+{
+    "name": "oltwasq7fzh7/public_html",
+    "autoload": {
+        "psr-4": {
+            "Oltwasq7fzh7\\PublicHtml\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nithin ps"
+        }
+    ],
+    "require": {
+        "edwinhoksberg/php-fcm": "^1.2"
+    }
+}

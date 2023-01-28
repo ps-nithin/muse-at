@@ -13,10 +13,13 @@ session_start();
 <div class="header_div">
 <div class="menu_item first_menu_item"><a href="index.php">home</a>
 </div><div class="menu_item act_menu"><a href="muse.php">send closed</a>
-</div><?php
+</div><div class="menu_item"><a href="open_logged_in.php">send open</a>
+</div><div class="menu_item"><a href="settings.php">+</a>
+</div>
+<?php
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
   $username=$_SESSION['username'];
-  echo "<div class='menu_item float_right'><a href='logout.php'>logout @$username</a></div>"; 
+  echo "<div class='menu_item float_right last_menu_item'><a href='logout.php'>logout @$username</a></div>"; 
 }else{
   echo "<div class='menu_item'><a href='login.php'>login</a></div>";
 }

@@ -27,7 +27,8 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
   }?>
 </div></div>
 
-<div class="content_div"><div class="welcome"><h1>muse@</h1><p>1. create a muse id.<p>2. share your muse id with the world.<p>3. receive  messages from the world.<p><a href='http://play.google.com/store/apps/details?id=com.messaging.muse&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img id='playstore' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a></p></div>
+<div class="content_div"><div class="welcome"><h1>muse@</h1><p>1. create a muse id.<p>2. share your muse id with the world.<p>3. receive  messages from the world.</div>
+<a href='http://play.google.com/store/apps/details?id=com.messaging.muse&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img id='playstore' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 </div>
 
 <div class="footer_div">
