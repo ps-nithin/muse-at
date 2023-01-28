@@ -1,4 +1,7 @@
 <?php
+$session_timeout=2592000;
+ini_set("session.gc_maxlifetime",$session_timeout);
+session_set_cookie_params($session_timeout);
 session_start();
 ?>
 

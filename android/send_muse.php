@@ -1,4 +1,7 @@
 <?php
+$session_timeout=2592000;
+ini_set("session.gc_maxlifetime",$session_timeout);
+session_set_cookie_params($session_timeout);
 session_start();
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!==true){
   header('location:login.php');
@@ -40,6 +43,29 @@ $time=date("h:ia").", ".date("d M Y");
 $time=$_POST['time'];
 $conn->query("insert into $receiver (inbox,sender,timeinbox,viewed) values ('$messages_encrypted','$username','$time',0);");
 $conn->query("insert into $username (outbox,receiver,timeoutbox,viewed) values ('$messages_encrypted','$receiver','$time',1);");
+
+require 'vendor/autoload.php';
+$client = new \Fcm\FcmClient('AAAAAgwfQzw:APA91bFXh8r8k9veJhve3cBNpPE9tL2ZOen2Uk9AqPuA_re85VMJsJbc6_knKouFzZ61K3arrLoOHGzMHo7liMp1VdxBMAHX9z2QVzlq7jG-plM4gwK6zmVJ1I3B0uEjVxNYmJetWFdg','8793310012');
+
+$notification = new \Fcm\Push\Notification();
+$res=$conn->query("select token_id from users where username='$receiver';");
+$row=$res->fetch_assoc();
+$deviceId=$row['token_id'];
+#$deviceId=$_SESSION['token'];
+#echo $deviceId;
+$notification
+    ->addRecipient($deviceId)
+    ->setTitle($username)
+    ->setColor('#20F037')
+    ->setSound("default")
+    ->setBadge(11)
+    ->setBody($messages);
+
+// Shortcut function:
+#$notification = $client->pushNotification('The title', 'The body', $deviceId);
+#print_r($notification);
+$response = $client->send($notification);
+
 header('location:view_inbox.php?id='.$receiver);
 
 ?>

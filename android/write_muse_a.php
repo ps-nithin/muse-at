@@ -30,9 +30,30 @@ if(strlen($messages)==0){
 	$conn->query("delete from $receiver where id='$id';");
   }
   if($conn->query("insert into $receiver (inbox,sender,timeinbox,viewed) values ('$messages_encrypted','$username','$time',0);")===true){
-    #header('location:open.php?r=1&id='.$receiver);
-    #exit;
-    echo "1";
+        require 'vendor/autoload.php';
+        $client = new \Fcm\FcmClient('AAAAAgwfQzw:APA91bFXh8r8k9veJhve3cBNpPE9tL2ZOen2Uk9AqPuA_re85VMJsJbc6_knKouFzZ61K3arrLoOHGzMHo7liMp1VdxBMAHX9z2QVzlq7jG-plM4gwK6zmVJ1I3B0uEjVxNYmJetWFdg','8793310012');
+
+        $notification = new \Fcm\Push\Notification();
+        $res=$conn->query("select token_id from users where username='$receiver';");
+        $row=$res->fetch_assoc();
+        $deviceId=$row['token_id'];
+        #echo $deviceId;
+        $notification
+            ->addRecipient($deviceId)
+            ->setTitle("new open message")
+            ->setColor('#20F037')
+            ->setSound("default")
+            ->setBadge(11)
+            ->setBody($messages);
+
+        // Shortcut function:
+        #$notification = $client->pushNotification('The title', 'The body', $deviceId);
+        #print_r($notification);
+        $response = $client->send($notification);
+
+        #header('location:open.php?r=1&id='.$receiver);
+        #exit;
+        echo "1";
   }else{
     #header('location:open.php?r=0&id='.$receiver);
     #exit;

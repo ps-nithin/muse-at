@@ -1,0 +1,16 @@
+{
+    "name": "oltwasq7fzh7/android",
+    "autoload": {
+        "psr-4": {
+            "Oltwasq7fzh7\\Android\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nithin ps"
+        }
+    ],
+    "require": {
+        "edwinhoksberg/php-fcm": "^1.2"
+    }
+}
