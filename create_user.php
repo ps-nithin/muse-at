@@ -22,7 +22,7 @@ if($conn->query($sql2)===true){
   exit;
 }
 
-$sql1="insert into users (username,password,email,fullname,delete_flag) values ('$username','$password','$email','$fullname','0');";
+$sql1="insert into users (username,password,email,fullname,delete_flag,token_id) values ('$username','$password','$email','$fullname','0','noactive');";
 if($conn->query($sql1)===true){
   echo "user created successfully.<br>";
 }else{

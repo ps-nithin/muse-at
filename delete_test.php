@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!==true){
+  header("location: login.php");
+  exit;
+}
 require('mysql_conn.php');
 $username=strtolower(trim($_POST['user_name']));
 $username=filter_var($username,FILTER_SANITIZE_STRING);

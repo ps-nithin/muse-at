@@ -22,7 +22,7 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1){
 ?>
 <html>
 <head>
-    <title>muse@ - sending closed message</title>
+    <title>muse@ - Sending Closed message</title>
     <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <link rel="stylesheet" type="text/css" href="../style.css"/>
@@ -31,16 +31,16 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1){
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href='muse.php'>&lt; back</a></div>
-<div class="menu_item float_right"><a href='logout.php'>logout @<?php echo $username;?></a></div>
+<div class="menu_item first_menu_item"><a href='muse.php'>&lt; Back</a></div>
+<div class="menu_item float_right"><a href='logout.php'>Logout @<?php echo $username;?></a></div>
 </div></div>
 <div class="content_div">
-<div class="welcome"><h2>sending a closed message</h2>
+<div class="welcome"><h2>Sending a Closed message</h2>
 <h2>to @<?php echo $receiver?></h2></div>
 <form class="content">
-<textarea class="input_text" id='muse_content_id' name='muse_content' maxlength='1024' placeholder='enter your message...'></textarea>
+<textarea class="input_text" id='muse_content_id' name='muse_content' maxlength='1024' placeholder='Enter your message...'></textarea>
 <input type='hidden' name='receiver' id='muse_receiver_id' value='<?php echo $receiver;?>'></input><br>
-<input class="input_button" id='submit_id' type='button' value='submit' name='submit'>
+<input class="input_button" id='submit_id' type='button' value='Submit' name='submit'>
 </form>
 </div>
 </body>

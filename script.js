@@ -8,7 +8,8 @@ $(document).ready(function(){
       //getContent(uname_global,museid_global);
     }
   });
-  $('#send_id').click(function(){
+  $('#send_id').click(function(e){
+      e.preventDefault();
       sendMuse();
   });
   $('#submit_id').click(function(){
@@ -39,8 +40,27 @@ $.ajax({
 }
 
 function sendMuse(){
+/*
 $.post( "send_muse.php", { receiver: $('#receiver_id').val(), time: getTime(),
     send_content: $('#send_content_id').val()});
+*/
+$.ajax({
+    url: "send_muse.php", 
+    type: 'POST',
+    data: { receiver: $('#receiver_id').val(), time: getTime(),
+    send_content: $('#send_content_id').val()},
+    success: function(resp){
+	window.location.reload();
+	/*
+        if(resp==0){
+            window.location.href="view_inbox.php?id="+$('#receiver_id').val();
+        }else if(resp==1){
+            window.location.href="view_inbox.php?id="+$('#receiver_id').val();
+        }
+	*/
+	
+    }});
+
 }
 
 function sendClosed(){

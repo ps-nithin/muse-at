@@ -15,40 +15,44 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <head>
-    <title>muse@ - open message</title>
+    <title>Muse@ - Open message</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href="index.php">home</a>
-</div><div class="menu_item act_menu"><a href="open.php">send open</a>
-</div><div class="menu_item"><a href="login.php">login</a>
-</div><div class="menu_item"><a href="signup.php">signup</a>
-</div></div></div>
+<div class="menu_item first_menu_item"><a href="index.php">Home</a>
+</div><div class="menu_item act_menu"><a href="open.php">Send Open</a>
+</div><div class="menu_item"><a href="login.php">Login</a>
+</div><div class="menu_item"><a href="signup.php">Signup</a>
+</div><div class="menu_item"><a href="faq.php">FAQs</a></div>
+</div></div>
 <div class="content_div">
-<div class="welcome"><h1>send an open message.</h1></div>
+<div class="welcome"><h1>Send an Open message.</h1></div>
 <form class="content first_item" action="get_user_a.php" method="post">
-@&nbsp;<input class="input_text" type="text" name="receiver" placeholder="enter muse id" value="<?php 
+@&nbsp;<input class="input_text" type="text" name="receiver" placeholder="Enter Muse ID" value="<?php 
 if(isset($_GET['id'])){
   echo $_GET['id'];
 }
 ?>"</input>
-<input class="input_button" type="submit" value="submit">
+<input class="input_button" type="submit" value="Submit">
 <div class="welcome">
 <?php 
 if(isset($_GET['r']) && $_GET['r']==1){
-  echo "<p>message sent.";
+  echo "<p>Message sent.";
 }else if(isset($_GET['r']) && $_GET['r']==0){
-  echo "<p>message not sent.";
+  echo "<p>Message not sent.";
 }else if(isset($_GET['r']) && $_GET['r']==2){
-  echo "<p>invalid muse id.";
+  echo "<p>Invalid Muse ID.";
 }else if(isset($_GET['r']) && $_GET['r']==3){
-  echo "<p>invalid sender details.";
+  echo "<p>Invalid sender details.";
 }
 ?>
 </div>
 </form>
+</div>
+<div class="footer_div">
+    <p>This is an Open-source project. Find code on<a href="https://github.com/ps-nithin/muse-at/" target="_blank">&nbsp;github</a></p>
 </div>
 </body>
 </html>

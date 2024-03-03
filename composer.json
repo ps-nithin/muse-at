@@ -11,6 +11,7 @@
         }
     ],
     "require": {
-        "edwinhoksberg/php-fcm": "^1.2"
+        "edwinhoksberg/php-fcm": "^1.2",
+        "chillerlan/php-qrcode": "^4.3"
     }
 }

@@ -16,9 +16,7 @@ $ciphering = "AES-128-CTR";
 $iv_length = openssl_cipher_iv_length($ciphering);
 $options = 0;
 $encryption_iv = '1234567891011121';
-$result=$conn->query("select password from users where username='$username';");
-$row=$result->fetch_assoc();
-$encryption_key = $row['password'];
+$encryption_key = "easy_encryption";
 $messages_encrypted = openssl_encrypt($messages, $ciphering, $encryption_key, $options, $encryption_iv);
 
 
@@ -59,9 +57,10 @@ if($conn->query($sql_inbox)===true and $conn->query($sql_outbox)==true){
     #echo $deviceId;
     $notification
     ->addRecipient($deviceId)
-    ->setTitle($username)
+    ->setTitle("Message from @".$username)
     ->setColor('#20F037')
     ->setSound("default")
+    ->setIcon("ic_small_icon.png")
     ->setBadge(11)
     ->setBody($messages);
 

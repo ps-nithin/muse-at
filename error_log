@@ -285,3 +285,83 @@ Stack trace:
 [22-Jan-2023 10:46:53 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
 [22-Jan-2023 10:47:02 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
 [22-Jan-2023 10:47:13 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user.php on line 9
+[11-Mar-2023 11:16:30 UTC] PHP Notice:  Undefined index: uname in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 3
+[11-Mar-2023 11:16:30 UTC] PHP Notice:  Undefined index: id in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 4
+[11-Mar-2023 11:16:30 UTC] PHP Notice:  Undefined index: page in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 5
+[11-Mar-2023 11:16:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 13
+[11-Mar-2023 11:16:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 19
+[11-Mar-2023 11:16:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/oltwasq7fzh7/public_html/get_content_inbox.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[11-Mar-2023 11:16:42 UTC] PHP Notice:  Undefined index: id in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 4
+[11-Mar-2023 11:16:42 UTC] PHP Notice:  Undefined index: page in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 5
+[11-Mar-2023 11:16:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 19
+[11-Mar-2023 11:16:58 UTC] PHP Notice:  Undefined index: id in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 4
+[11-Mar-2023 11:16:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 19
+[11-Mar-2023 11:58:46 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:58:46 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 11:59:50 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:59:50 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 11:59:52 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:59:52 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 11:59:53 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:59:53 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 11:59:55 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:59:55 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 11:59:57 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 11:59:57 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:01:07 UTC] PHP Notice:  Undefined index: uname in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 3
+[11-Mar-2023 12:01:07 UTC] PHP Notice:  Undefined index: id in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 4
+[11-Mar-2023 12:01:07 UTC] PHP Notice:  Undefined index: page in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 5
+[11-Mar-2023 12:01:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 13
+[11-Mar-2023 12:01:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 19
+[11-Mar-2023 12:01:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/oltwasq7fzh7/public_html/get_content_inbox.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 27
+[11-Mar-2023 12:01:12 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 12:01:12 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:01:24 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 12:01:24 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:02:03 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 12:02:03 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:03:24 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 12:03:24 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:03:25 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 22
+[11-Mar-2023 12:03:25 UTC] PHP Warning:  A non-numeric value encountered in /home/oltwasq7fzh7/public_html/get_content_inbox.php on line 23
+[11-Mar-2023 12:28:02 UTC] PHP Notice:  Undefined variable: _SESSION in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 12:28:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 12:30:01 UTC] PHP Notice:  Undefined variable: _SESSION in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 12:30:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 12:35:16 UTC] PHP Notice:  Undefined variable: _SESSION in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 12:35:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 13:40:14 UTC] PHP Notice:  Undefined variable: _SESSION in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 13:40:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/oltwasq7fzh7/public_html/reset.php on line 8
+[11-Mar-2023 13:46:06 UTC] PHP Notice:  Undefined variable: session_start in /home/oltwasq7fzh7/public_html/reset.php on line 2
+[11-Mar-2023 13:46:06 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/oltwasq7fzh7/public_html/reset.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/oltwasq7fzh7/public_html/reset.php on line 2
+[21-Oct-2023 23:08:59 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/signup_otp.php on line 6
+[21-Oct-2023 23:08:59 UTC] PHP Notice:  Undefined index: pass_word in /home/oltwasq7fzh7/public_html/signup_otp.php on line 7
+[21-Oct-2023 23:08:59 UTC] PHP Notice:  Undefined index: email in /home/oltwasq7fzh7/public_html/signup_otp.php on line 8
+[21-Oct-2023 23:08:59 UTC] PHP Notice:  Undefined index: re_pass_word in /home/oltwasq7fzh7/public_html/signup_otp.php on line 9
+[22-Oct-2023 03:35:17 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/login_test.php on line 3
+[22-Oct-2023 03:35:17 UTC] PHP Notice:  Undefined index: pass_word in /home/oltwasq7fzh7/public_html/login_test.php on line 5
+[22-Oct-2023 04:06:31 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user_a.php on line 10
+[24-Oct-2023 05:58:55 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[24-Oct-2023 05:59:19 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[24-Oct-2023 05:59:24 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[24-Oct-2023 06:03:24 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[24-Oct-2023 06:05:51 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[24-Oct-2023 06:06:29 UTC] PHP Notice:  Undefined index: send_content in /home/oltwasq7fzh7/public_html/send_muse.php on line 11
+[26-Oct-2023 04:47:32 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/reset_otp.php on line 11
+[09-Nov-2023 16:27:07 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/signup_otp.php on line 6
+[09-Nov-2023 16:27:07 UTC] PHP Notice:  Undefined index: pass_word in /home/oltwasq7fzh7/public_html/signup_otp.php on line 7
+[09-Nov-2023 16:27:07 UTC] PHP Notice:  Undefined index: email in /home/oltwasq7fzh7/public_html/signup_otp.php on line 8
+[09-Nov-2023 16:27:07 UTC] PHP Notice:  Undefined index: re_pass_word in /home/oltwasq7fzh7/public_html/signup_otp.php on line 9
+[10-Nov-2023 04:42:51 UTC] PHP Notice:  Undefined index: receiver in /home/oltwasq7fzh7/public_html/get_user_a.php on line 10
+[10-Nov-2023 19:00:43 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/login_test.php on line 3
+[10-Nov-2023 19:00:43 UTC] PHP Notice:  Undefined index: pass_word in /home/oltwasq7fzh7/public_html/login_test.php on line 5
+[14-Nov-2023 20:14:17 UTC] PHP Notice:  Undefined index: user_name in /home/oltwasq7fzh7/public_html/reset_otp.php on line 11

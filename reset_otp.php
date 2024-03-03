@@ -1,11 +1,7 @@
 <?php
+session_start();
 require('mysql_conn.php');
 require('send.php');
-session_start();
-if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']===true){
-  header("location: welcome.php");
-  exit;
-}
 
 $otp_val=rand(10000,99999);
 $_SESSION['otp_reset']=$otp_val;

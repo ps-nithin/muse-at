@@ -7,35 +7,39 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <head>
+    <title>Muse@ - FAQs</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href="index.php">home</a>
-</div><div class="menu_item"><a href="open.php">send open</a></div><?php
+<div class="menu_item first_menu_item"><a href="index.php">Home</a>
+</div><div class="menu_item"><a href="open.php">Send Open</a></div><?php
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-  echo "<div class='menu_item'><a href='logout.php'>logout</a></div>";
+  echo "<div class='menu_item'><a href='logout.php'>Logout</a></div>";
 }else{
-  echo "<div class='menu_item'><a href='login.php'>login</a></div>";
-  echo "<div class='menu_item'><a href='signup.php'>signup</a></div>";
+  echo "<div class='menu_item'><a href='login.php'>Login</a></div>";
+  echo "<div class='menu_item'><a href='signup.php'>Signup</a></div>";
 }
 ?>
-<div class="menu_item act_menu"><a href="faq.php">faq</a></div>
+<div class="menu_item act_menu"><a href="faq.php">FAQs</a></div>
 </div></div>
 <div class="content_div"><div class="content first_item">
-<h2>what is this all about?</h2>
-<p>a new and open way of communication.
-<h2>what is a muse id?</h2>
-<p>a muse id is a unique id that identifies a user to the world.
-<h2>what to do with a muse id?</h2>
-<p>share your muse id with the world and you can receive open and closed messages from the world.
-<h2>what are open and closed messages?</h2>
-<p>an open message is a message in which you cannot know the identity of the sender while a closed message is a message in which you can know the identity of the sender.</p>
-<h2>who can send you a message?</h2>
-<p>anyone who knows your muse id can send you a message.
+<h2>What is this all about?</h2>
+<p>A new and open way of communication.
+<h2>What is a Muse ID?</h2>
+<p>A Muse ID is a unique id that identifies a user to the world.
+<h2>What to do with a Muse ID?</h2>
+<p>Share your Muse ID with the world and you can receive Open and Closed messages from the world.
+<h2>What are Open and Closed messages?</h2>
+<p>An Open message is a message in which you cannot know the identity of the sender while a Closed message is a message in which you can know the identity of the sender.</p>
+<h2>Who can send you a message?</h2>
+<p>Anyone who knows your Muse ID can send you a message.
 <hr>
-<p>send your queries to <a href="open.php?id=help">@help</a></p></div>
+<p>Send your queries to <a href="open.php?id=help">@help</a></p></div>
+</div>
+<div class="footer_div">
+    <p>This is an Open-source project. Find code on<a href="https://github.com/ps-nithin/muse-at/" target="_blank">&nbsp;github</a></p>
 </div>
 </body>
 </html>

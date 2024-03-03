@@ -21,9 +21,9 @@ $museid=trim($_GET['id']);
 ?>
 <div class="header_wrap">
 <div class="header_div">
-    <div class="menu_item first_menu_item"><a href="welcome.php">&lt;&nbsp;back</a></div>
+    <div class="menu_item first_menu_item"><a href="welcome.php">&lt;&nbsp;Back</a></div>
     <div class="menu_item act_menu"><?php echo "@".$_GET['id'];?></div>
-    <div class="menu_item last_menu_item float_right"><a href="logout.php"><?php echo "logout @$username"?></a></div>
+    <div class="menu_item last_menu_item float_right"><a href="logout.php"><?php echo "Logout @$username"?></a></div>
 </div>
 </div>
 <div class="control_div">
@@ -44,8 +44,8 @@ echo "
   <div class='footer_wrap_inbox'>  
   <div class='footer_div_inbox'>
   <form method='post' class='inbox_form'>
-  <input type='submit' class='input_button_inbox' id='send_id' value='send'/> 
-  <input type='text' class='input_text_inbox' id='send_content_id' autocomplete='off' name='send_content' placeholder='type here...'/>
+  <input type='submit' class='input_button_inbox' id='send_id' value='Send'/> 
+  <input type='text' class='input_text_inbox' id='send_content_id' autocomplete='off' name='send_content' placeholder='Type here...'/>
   <input type='hidden' id='receiver_id' name='receiver' value='".$museid."'/></form></div></div>";
 }
 ?>

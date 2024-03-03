@@ -18,7 +18,7 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1 or $r
 ?>
 <html>
 <head>
-    <title>muse@ - sending open message</title>
+    <title>Muse@ - Sending Open message</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -27,16 +27,18 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1 or $r
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href='open_logged_in.php'>&lt; back</a></div>
+<div class="menu_item first_menu_item"><a href='open_logged_in.php'>&lt; Back</a></div>
 </div></div>
-<div class="content_div"><div class="welcome"><h2>sending an open message<br>to @<?php echo $receiver?></h2></div>
+<div class="content_div"><div class="welcome"><h2>Sending an Open message<br>to @<?php echo $receiver?></h2></div>
 <form>
-<textarea class="input_text" name='muse_content' id='muse_content_open_id' maxlength='1024' placeholder='enter your message...'></textarea>
+<textarea class="input_text" name='muse_content' id='muse_content_open_id' maxlength='1024' placeholder='Enter your message...'></textarea>
 <input type='hidden' id='open_receiver_id' name='receiver' value='<?php echo $receiver;?>'></input><br>
-<input class="input_button" id='open_submit_id' value='submit' type='button' name='submit'>
+<input class="input_button" id='open_submit_id' value='Submit' type='button' name='submit'>
 </form>
 </div>
-
+<div class="footer_div">
+    <p>This is an Open-source project. Find code on<a href="https://github.com/ps-nithin/muse-at/" target="_blank">&nbsp;github</a></p>
+</div>
 
 </body>
 </html>
