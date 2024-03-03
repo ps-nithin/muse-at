@@ -2,14 +2,24 @@ var page=0;
 var uname_global="";
 var museid_global="";
 $(document).ready(function(){
+  /*
+  setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
+  */
   moveToBottom();
-  $(window).scroll(function(){
-    if($(window).scrollTop()===0){
-      //getContent(uname_global,museid_global);
-    }
+  $('#send_content_id').focus(function(){
+    moveToBottom();
+  });
+  $('#create_muse_btn').click(function(e){
+    alert("hello");
+    e.preventDefault();
+    $('#create_muse_btn').attr('disabled',true);
   });
   $('#send_id').click(function(){
+    if($('#send_content_id').val().length>0){
       sendMuse();
+    }
   });
   $('#submit_id').click(function(){
       if ($('#muse_content_id').val().length>0){

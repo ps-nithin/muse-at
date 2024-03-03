@@ -59,36 +59,36 @@ $password_hashed=password_hash($password,PASSWORD_DEFAULT);
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href="index.php">home</a>
-</div><div class="menu_item"><a href="muse_a.php">send</a>
-</div><div class="menu_item"><a href="login.php">login</a>
-</div><div class="menu_item act_menu"><a href="signup.php">signup</a>
+<div class="menu_item first_menu_item"><a href="index.php">Home</a>
+</div><div class="menu_item"><a href="login.php">Login</a>
+</div><div class="menu_item act_menu"><a href="signup.php">Signup</a>
 </div></div></div>
 <div class="content_div">
 <form class="content" action="create_user.php" method="post">
-<div class="welcome"><h1>create a muse id.</h1></div>
+<div class="welcome"><h1>Create a Muse ID.</h1></div>
 <input class="input_text" type="text" name="otp" placeholder="enter otp"/>
 <input class="input_text" type="hidden" name="email" value="<?php echo $email;?>"/>
 <input class="input_text" type="hidden" name="full_name" value="<?php echo $fullname;?>"/>
 <input class="input_text" type="hidden" name="user_name" value="<?php echo $username;?>"/>
 <input class="input_text" type="hidden" name="pass_word" value="<?php echo $password_hashed;?>"/>
-<input class="input_button" type="submit" value="create">
+<input class="input_button" type="submit" value="Create">
+<p class="welcome">OTP sent to your email.</p>
 <?php
 if(isset($_GET['r']) && $_GET['r']==1){
-  echo "<p>muse id '".$_GET['id']."' registered succesfully.";
+  echo "<p>Muse ID '".$_GET['id']."' registered succesfully.";
 }else if(isset($_GET['r']) && $_GET['r']==0){
-  echo "<p>muse id not available.";
+  echo "<p>Muse ID not available.";
 }else if(isset($_GET['r']) && $_GET['r']==2){
-  echo "<p>invalid muse id. only letters,numbers and underscores are allowed.";
-  echo "<p>password length should be 8-15 characters long.";
+  echo "<p>Invalid Muse ID. Only letters,numbers and underscores are allowed.";
+  echo "<p>Password length should be 8-15 characters long.";
 }else if(isset($_GET['r']) && $_GET['r']==3){
-  echo "<p>invalid password. only letters and numbers are allowed.";
+  echo "<p>Invalid password. only letters and numbers are allowed.";
 }else if(isset($_GET['r']) && $_GET['r']==4){
-  echo "<p>unknown error.";
+  echo "<p>Unknown error.";
 }else if(isset($_GET['r']) && $_GET['r']==5){
-  echo "<p>password mismatch.";
+  echo "<p>Password mismatch.";
 }else if(isset($_GET['r']) && $_GET['r']==6){
-  echo "<p>unknown error.";
+  echo "<p>Unknown error.";
 }
 ?>
 </form>

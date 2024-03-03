@@ -1,4 +1,5 @@
 <?php
+/*
 $session_timeout=2592000;
 ini_set("session.gc_maxlifetime",$session_timeout);
 session_set_cookie_params($session_timeout);
@@ -10,6 +11,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!==true){
 
 require('mysql_conn.php');
 $username=trim($_SESSION['username']);
+*/
+require('protected.php');
 $receiver=trim($_POST['receiver']);
 $receiver=filter_var($receiver,FILTER_SANITIZE_STRING);
 $messages=trim($_POST['send_content']);
@@ -18,9 +21,7 @@ $ciphering = "AES-128-CTR";
 $iv_length = openssl_cipher_iv_length($ciphering);
 $options = 0;
 $encryption_iv = '1234567891011121';
-$result=$conn->query("select password from users where username='$username';");
-$row=$result->fetch_assoc();
-$encryption_key = $row['password'];
+$encryption_key = "easy_encryption";
 $messages_encrypted = openssl_encrypt($messages, $ciphering, $encryption_key, $options, $encryption_iv);
 
 $max_msg=1000;
@@ -55,8 +56,9 @@ $deviceId=$row['token_id'];
 #echo $deviceId;
 $notification
     ->addRecipient($deviceId)
-    ->setTitle($username)
+    ->setTitle("Message from @".$username)
     ->setColor('#20F037')
+    ->setIcon("ic_small_icon.png")
     ->setSound("default")
     ->setBadge(11)
     ->setBody($messages);

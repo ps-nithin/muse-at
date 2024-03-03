@@ -20,13 +20,13 @@ if ($result->num_rows==0 or strlen($receiver)==0 or $row['delete_flag']==1 or $r
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href='open.php'>&lt; back</a></div>
+<div class="menu_item first_menu_item"><a href='open.php'>&lt; Back</a></div>
 </div></div>
-<div class="content_div"><div class="welcome"><h2>sending an open message to</h2><h1>@<?php echo $receiver?></h1></div>
+<div class="content_div"><div class="welcome"><h2>Sending an Open message to</h2><h1>@<?php echo $receiver?></h1></div>
 <form>
-<textarea class="input_text" name='muse_content' id='muse_content_open_id' maxlength='1024' placeholder='enter your message...'></textarea>
+<textarea class="input_text" name='muse_content' id='muse_content_open_id' maxlength='1024' placeholder='Enter your message...'></textarea>
 <input type='hidden' id='open_receiver_id' name='receiver' value='<?php echo $receiver;?>'></input><br>
-<input class="input_button" id='open_submit_id' value='submit' type='button' name='submit'>
+<input class="input_button" id='open_submit_id' value='Submit' type='button' name='submit'>
 </form>
 </div>
 

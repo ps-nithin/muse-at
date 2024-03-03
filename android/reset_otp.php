@@ -1,7 +1,7 @@
 <?php
+session_start();
 require('mysql_conn.php');
 require('send.php');
-session_start();
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']===true){
   header("location: welcome.php");
   exit;
@@ -36,23 +36,23 @@ if($result->num_rows==0){
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <head>
-<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="header_wrap">
 <div class="header_div">
 <div class="menu_item first_menu_item"><a href="reset_login.php">&lt;</a>
-</div><div class="menu_item act_menu"><a href="reset_login.php">reset</a>
+</div><div class="menu_item act_menu"><a href="reset_login.php">Reset</a>
 </div>
 </div></div>
 <div class="content_div">
-<div class="welcome"><h1>reset your login</h1><p>otp is sent to your email.</div>
+<div class="welcome"><h1>Reset your login</h1><p>An OTP is sent to your email.</div>
 <form class="content" action="reset.php" method="post">
-    <input class="input_text" type="text" name="otp" placeholder="enter otp"/><br>
+    <input class="input_text" type="text" name="otp" placeholder="Enter OTP"/><br>
     <input class="input_text" type="hidden" name="user_name" value="<?php echo $username;?>"/>
-    <input class="input_text" type="password" name="pass_word" placeholder="enter new password"/><br>
-    <input class="input_text" type="password" name="re_pass_word" placeholder="re-enter new password"/><br>
-    <input class="input_button" type="submit" value="submit"/>
+    <input class="input_text" type="password" name="pass_word" placeholder="Enter new password"/><br>
+    <input class="input_text" type="password" name="re_pass_word" placeholder="Re-enter new password"/><br>
+    <input class="input_button" type="submit" value="Submit"/>
 </form>
 </div>
 </body>

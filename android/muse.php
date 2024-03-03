@@ -1,8 +1,11 @@
 <?php
+/*
 $session_timeout=2592000;
 ini_set("session.gc_maxlifetime",$session_timeout);
 session_set_cookie_params($session_timeout);
 session_start();
+*/
+require('protected.php');
 ?>
 
 <html>
@@ -14,39 +17,39 @@ session_start();
 <body>
 <div class="header_wrap">
 <div class="header_div">
-<div class="menu_item first_menu_item"><a href="index.php">home</a>
-</div><div class="menu_item act_menu"><a href="muse.php">send closed</a>
-</div><?php
-if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-  $username=$_SESSION['username'];
-  echo "<div class='menu_item last_menu_item float_right'><a href='logout.php'>logout</a></div>"; 
-}else{
-  echo "<div class='menu_item'><a href='login.php'>login</a></div>";
-}
-?>
+<div class="menu_item first_menu_item"><a href="welcome.php">Home</a>
+</div><div class="menu_item act_menu"><a href="muse.php">Send Closed</a>
+</div><div class="menu_item"><a href="settings.php">+</a></div>
+<div class="menu_item last_menu_item float_right"><a href="logout.php">Logout</a></div>
 </div></div>
 <div class="content_div">
-<div class="welcome"><h2>send a closed message.</h2></div>
+<div class="welcome"><h2>Send a Closed Message.</h2></div>
 <form class="content first_item" action="get_user.php" method="post">
-
-@&nbsp;<input class="input_text" type="text" name="receiver" placeholder="enter muse id" value="<?php 
+<span>@</span><input class="input_text" type="text" name="receiver" placeholder="Enter Muse ID" value="<?php 
 if(isset($_GET['id'])){
   echo $_GET['id'];
 }
 ?>"</input>
-<input class="input_button" type="submit" value="submit">
+<input class="input_button" type="submit" value="Submit">
+<input class="input_button" type="button" value="Scan" onClick="showAndroidScan()"/>
+
 <?php 
 if(isset($_GET['r']) && $_GET['r']==1){
-  echo "<div class='welcome'><p>message sent.</div>";
+  echo "<div class='welcome'><p>Message sent.</div>";
 }else if(isset($_GET['r']) && $_GET['r']==0){
-  echo "<div class='welcome'><p>message not sent.</div>";
+  echo "<div class='welcome'><p>Message not sent.</div>";
 }else if(isset($_GET['r']) && $_GET['r']==2){
-  echo "<div class='welcome'><p>invalid muse id.</div>";
+  echo "<div class='welcome'><p>Invalid Muse ID.</div>";
 }else if(isset($_GET['r']) && $_GET['r']==3){
-  echo "<div class='welcome'><p>invalid sender details.</div>";
+  echo "<div class='welcome'><p>Invalid sender details.</div>";
 }
 ?>
 </form>
 </div>
+<script type="text/javascript">
+    function showAndroidScan(){
+        Android.showScan();
+    }
+</script>
 </body>
 </html>
